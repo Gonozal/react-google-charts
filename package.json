@@ -1,19 +1,56 @@
 {
-  "name": "react-google-charts",
-  "version": "1.5.5",
-  "type": "react-component",
-  "description": "react-google-charts React component",
-  "main": "lib/index.js",
-  "scripts": {
-    "deploy": "gh-pages-deploy",
-    "build": "mv .babelrc .babelrc.backup && nwb build && mv .babelrc.backup .babelrc",
-    "clean": "nwb clean",
-    "start": "nwb serve",
-    "lint": "./node_modules/.bin/eslint src/*",
-    "test-node-env": "./node_modules/.bin/jest --env node __tests__/Chart.test.js  --verbose",
-    "test-jsdom-env": "./node_modules/.bin/jest --env jsdom __tests__/Chart.test.js --verbose",
-    "test": "npm run lint && npm run test-node-env && npm run test-jsdom-env",
-    "gen:changelog": "github-changes -o RakanNimer -r react-google-charts"
+  "_args": [
+    [
+      {
+        "raw": "react-google-charts",
+        "scope": null,
+        "escapedName": "react-google-charts",
+        "name": "react-google-charts",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/realtecmac/Documents/Websites/realtec-shop"
+    ]
+  ],
+  "_from": "react-google-charts@latest",
+  "_id": "react-google-charts@1.5.5",
+  "_inCache": true,
+  "_location": "/react-google-charts",
+  "_nodeVersion": "7.7.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-google-charts-1.5.5.tgz_1494684996496_0.9547042776830494"
+  },
+  "_npmUser": {
+    "name": "rakannimer",
+    "email": "rakannimer@gmail.com"
+  },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-google-charts",
+    "scope": null,
+    "escapedName": "react-google-charts",
+    "name": "react-google-charts",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-google-charts/-/react-google-charts-1.5.5.tgz",
+  "_shasum": "ffeaeca752a820a05029bd6a23516be2432d7df5",
+  "_shrinkwrap": null,
+  "_spec": "react-google-charts",
+  "_where": "/Users/realtecmac/Documents/Websites/realtec-shop",
+  "author": {
+    "name": "Rakan Nimer"
+  },
+  "bugs": {
+    "url": "https://github.com/rakannimer/react-google-charts/issues"
   },
   "dependencies": {
     "debug": "^2.2.0",
@@ -22,10 +59,7 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },
-  "peerDependencies": {
-    "react": ">= 0.13.x",
-    "react-dom": ">= 0.13.x"
-  },
+  "description": "react-google-charts React component",
   "devDependencies": {
     "babel-eslint": "^6.1.2",
     "babel-jest": "^18.0.0",
@@ -50,12 +84,16 @@
     "react-test-renderer": "^15.3.2",
     "yargs": "^5.0.0"
   },
+  "directories": {},
+  "dist": {
+    "shasum": "ffeaeca752a820a05029bd6a23516be2432d7df5",
+    "tarball": "https://registry.npmjs.org/react-google-charts/-/react-google-charts-1.5.5.tgz"
+  },
   "gh-pages-deploy": {
     "staticpath": "demo/dist/"
   },
-  "bugs": {
-    "url": "https://github.com/rakannimer/react-google-charts/issues"
-  },
+  "gitHead": "60319f57eafaf9cc6b5ed7365789f0888e147141",
+  "homepage": "https://rakannimer.github.io/react-google-charts/",
   "jest": {
     "moduleFileExtensions": [
       "jsx",
@@ -72,13 +110,41 @@
     "testEnvironment": "node",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(js|jsx)$"
   },
-  "author": "Rakan Nimer",
-  "homepage": "https://rakannimer.github.io/react-google-charts/",
-  "license": "MIT",
-  "repository": "https://github.com/RakanNimer/react-google-charts",
   "keywords": [
     "react",
     "google",
     "charts"
-  ]
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "rakannimer",
+      "email": "rakannimer@gmail.com"
+    }
+  ],
+  "name": "react-google-charts",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": ">= 0.13.x",
+    "react-dom": ">= 0.13.x"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RakanNimer/react-google-charts.git"
+  },
+  "scripts": {
+    "build": "mv .babelrc .babelrc.backup && nwb build && mv .babelrc.backup .babelrc",
+    "clean": "nwb clean",
+    "deploy": "gh-pages-deploy",
+    "gen:changelog": "github-changes -o RakanNimer -r react-google-charts",
+    "lint": "eslint src/*",
+    "start": "nwb serve",
+    "test": "npm run lint && npm run test-node-env && npm run test-jsdom-env",
+    "test-jsdom-env": "jest --env jsdom __tests__/Chart.test.js --verbose",
+    "test-node-env": "jest --env node __tests__/Chart.test.js  --verbose"
+  },
+  "type": "react-component",
+  "version": "1.5.5"
 }
